@@ -1,39 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Cat images</title>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+</head>
 
-    <style>
-    Cat Image Button  {
-        background color: blue;
-        color: black;
-      }
-      h1 {
-        font-size: 1.25em;
-        font-weight: bold;
-      }
-    </style>
-      </head>
-      <body>
-        <h1>
-      <img src = "https://media.boingboing.net/wp-content/uploads/2019/02/cats.jpg" style= "width: 20%">
-      <img src = "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg" style= "width: 20%">
-      <img src = "https://i.ytimg.com/vi/Uu7WQSmGsks/maxresdefault.jpg" style= "width: 20%">
-      <img src = "https://i.pinimg.com/236x/18/3d/ea/183dea8508103cb4e5d994027d9fb083.jpg" style= "width: 20%">
-      <img src = "https://i.pinimg.com/236x/ed/89/76/ed89764415b5ea02cfbf72854809c624.jpg" style= "width: 20%">
+<body>
+<div id="iii" class="iii">
+  <img id="my_image17" border="0" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
 
-      cute kitties {
-        more cats: cat there;
-        cat here: CAT;
-      }
+<script>
+$(function(){
+  var $img       = $("#my_image17")
+    , $container = $("#iii");
+  $img.on("click", function() {
+    $img.remove();
+    $container.html("<embed  src='http://www.leconcombre.com/stock/coccyminimini1.swf' width='550'  height='400'/>");
+    $container.removeClass().removeAttr("id");
+  });
+});
 
+</script>
 
-    <script language="javascript">
-      let counter         = 0,
-          counter_display = document.getElementById('counter'),
-          "parent.removeChild(node)";
-
-      });
-    </script>
-  </body>
+</body>
 </html>
