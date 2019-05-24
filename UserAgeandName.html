@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User's Name and Age</title>
+
+    <body>
+<form id='form' method = 'post'>
+    <p> First Name: <input type='text' id = "first_name"/></p>
+    <p> Birthday: <input type="date" id= "bday"/></p>
+    <p><input id ="submit" type = "button" onclick="display()" value='clickme'/></p>
+
+</form>
+<script>
+var firstName;
+var birthday;
+function getFirstName() {
+    return document.getElementById("first_name").value;
+}
+function getAge(dateString) {
+  var today = new Date();
+  var birthdate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+    return document.getElementbyId("bday").value;
+}
+function display() {
+    firstName = getFirstName();
+    window.alert(firstName);  //+ Age doesn't work
+    document.getElementById("form").submit();
+
+
+
+}
+</script>
+</body>
+
+</html>
