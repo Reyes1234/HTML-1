@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User's Name and Age</title>
+
+    <body>
+    Enter Your Name: <input type= "text" name="name" id="name"><br />
+    Enter Your Birthday: <input type="date" id="birthday"><br />
+    <button type="button" id="myButton">Click Me!</button>
+    </body>
+
+<script>
+let myButton = document.getElementById('myButton');
+myButton.addEventListener("click", function(){ getAge() } );
+
+function getAge() {
+console.log(document.getElementById('name').value);
+console.log(document.getElementById('birthday').value);
+var today = new Date();
+today.getDate()
+today.getFullYear()
+var newDate = new Date (document.getElementById('birthday').value);
+newDate
+newDate.getFullYear()
+newDate = new Date(document.getElementById('birthday').value);
+newDate.getFullYear();
+today.getFullYear();
+today.getFullYear() - newDate.getFullYear();
+
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+5.1 HTML
+Javascript how to do it
+
+<html>
+
+<body>
+Enter Your Name: <input type="text" name="myTextbox" id="name"><br />
+Enter Your Birthday: <input type="date" id="birthday"><br />
+<button type="button" id="myButton">Click Me!</button>
+</body>
+
+ <script>
+ let myButton = document.getElementById('myButton');
+ myButton.addEventListener("click", function(){ getAge() });
+
+ fuction getAge(){
+   console.log(document.getElementById('name').value);
+   document.getElementById('birthday').value;
+   var today = new Date();
+   today.getDate()
+   today.getFullYear(
+   var newDate= new Date(document.getElementById('birthday').value);
+ );
+ newDate = new Date(document.getElementById('birthday').value);
+ today.getFullYear() - newDate.getFullYear();
+
+ }
+
+ </script>
+
+</html>
