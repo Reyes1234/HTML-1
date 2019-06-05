@@ -1,0 +1,42 @@
+<html>
+<title>Name and Age</title>
+<h1>Type in your Name and Birthday<h1>
+
+<body>
+Enter Your Name: <input type="text"  name="myTextBox" id="name"><br />
+Enter Your Birthday: <input type="date"  id="birthday"><br />
+<button type="button" id="myButton">Click Me!</button>
+</body>
+
+<script>
+let myButton = document.getElementById('myButton');
+myButton.addEventListener("click", function(){ getAge() });
+
+function getAge(){
+  console.log(document.getElementById('name').value);
+  console.log(document.getElementById('birthday').value);
+  var today = new Date();
+  var today;
+  console.log(today.getDate());
+  console.log(today.getFullYear());
+  var newDate = new Date(document.getElementById('birthday').value);
+  var newDate;
+  console.log(newDate.getFullYear());
+  console.log(newDate = new Date(document.getElementById('birthday').value));
+  console.log(newDate.getFullYear());
+  console.log(today.getFullYear());
+  console.log(today.getFullYear() - newDate.getFullYear());
+  // onclick = "alert name + age"; (this doesn't work)
+}
+</script>
+
+<script>
+function sayHi(){
+
+}
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  // not working either 
+</script>
+
+</html>
